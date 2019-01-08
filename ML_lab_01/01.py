@@ -9,4 +9,3 @@ sess = tf.Session()
 
 #run the op and get result
 print(sess.run(hello))
-
