@@ -3,4 +3,5 @@
 #### img=imread(filename.png) 
 
 > plt.imshow(img)
+	<br>
 > plt.show()
