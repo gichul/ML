@@ -3,4 +3,4 @@
 #### img=imread(filename.png) 
 
 > plt.imshow(img)
-> plt.sho()ÇÏ¸é ³¡
+> plt.show()
