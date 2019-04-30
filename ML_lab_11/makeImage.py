@@ -11,7 +11,7 @@ image = np.array([[[[1],[2],[3]],
 plt.imshow(image.reshape(3,3), cmap='Greys')
 #plt.show()
 
-
+'''
 #step2
 #print("imag:\n", image)
 #print("image.shape", image.shape)
@@ -26,9 +26,9 @@ for i, one_img in enumerate(conv2d_img):
     print(one_img.reshape(2,2))
     plt.subplot(1,2,i+1), plt.imshow(one_img.reshape(2,2), cmap='gray')
 #plt.show()
+'''
 
-
-
+'''
 #step3
 # print("imag:\n", image)
 #print("image.shape", image.shape)
@@ -44,9 +44,9 @@ for i, one_img in enumerate(conv2d_img):
     print(one_img.reshape(3,3))
     plt.subplot(1,2,i+1), plt.imshow(one_img.reshape(3,3), cmap='gray')
 #plt.show()
+'''
 
-
-
+'''
 #step4
 # print("imag:\n", image)
 #print("image.shape", image.shape)
@@ -62,9 +62,9 @@ for i, one_img in enumerate(conv2d_img):
     print(one_img.reshape(3,3))
     plt.subplot(1,3,i+1), plt.imshow(one_img.reshape(3,3), cmap='gray')
 #plt.show()
+'''
 
-
-
+'''
 #step5
 image = np.array([[[[4],[3]],
                     [[2],[1]]]], dtype=np.float32)
@@ -72,7 +72,7 @@ pool = tf.nn.max_pool(image, ksize=[1, 2, 2, 1],
                     strides=[1, 1, 1, 1], padding='SAME')
 #print(pool.shape)
 #print(pool.eval())
-
+'''
 
 
 
