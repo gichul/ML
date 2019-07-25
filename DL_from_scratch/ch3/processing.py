@@ -12,9 +12,9 @@ def init_network():
 
 	return network
 
-def predict(networt,x):
-	W1,W2,W3=network['W1'],network['W2'],networt['W3']
-	b1,b2,b3=networt['b1'],networt['b2'],network['b3']
+def predict(network,x):
+	W1,W2,W3=network['W1'],network['W2'],network['W3']
+	b1,b2,b3=network['b1'],network['b2'],network['b3']
 
 	a1=np.dot(x,W1)+b1
 	z1=sigmoid(a1)
@@ -37,7 +37,8 @@ def accuracy():
 			accuracy_cnt+=1
 
 	print("Accuracy: "+str(float(accuracy_cnt)/len(x)))
-
+'''
+#implemented by myself
 def softmax(a):
 	c=np.max(a)
 	exp_a=a.exp(a-c) # solution of overflow 
@@ -45,3 +46,18 @@ def softmax(a):
 	y=exp_a/sum_exp_a
 	
 	return y
+'''
+def softmax(x):
+    if x.ndim == 2:
+        x = x.T
+        x = x - np.max(x, axis=0)
+        y = np.exp(x) / np.sum(np.exp(x), axis=0)
+        return y.T 
+
+    x = x - np.max(x) # 오버플로 대책
+    return np.exp(x) / np.sum(np.exp(x))
+
+
+
+def sigmoid(x):
+	return 1/(1+np.exp(-x))

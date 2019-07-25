@@ -8,7 +8,7 @@ from processing import *
 def img_show(img):
 	pil_img=Image.fromarray(np.uint8(img))
 	pil_img.show()
-
+'''
 (x_train, t_train), (x_test, t_test) = load_mnist(flatten=True,normalize=False)
 
 	
@@ -17,8 +17,9 @@ def img_show(img):
 #print(x_test.shape)
 #print(t_test.shape)
 
-img =x_train[0]
-label=t_train[0]
+img =x_test[0]
+print(x_test[0])
+label=t_test[0]
 print(label)
 
 print(img.shape)
@@ -27,16 +28,19 @@ print(img.shape)
 
 img_show(img)
 
+'''
 
+'''
 x,y=get_data()
-#print(x[0])
-img=x[1000]
+print(x[0])
+#print(np.sum(np.array(x[0])))
+img=x[0]
 img=img.reshape(28,28)
 print(img.shape)
 img_show(img)
 
-label=y[1000]
+label=y[0]
 print(label)
+'''
 
-
-#accuracy()
+accuracy()
