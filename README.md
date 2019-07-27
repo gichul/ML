@@ -14,8 +14,8 @@
 > 2. Artificial Neural Network
 > 3. Support Vector Machine
 
->	> #### Artificial Neural Network 
->	>	##### Deep learning 
+>	> ##### Artificial Neural Network 
+> >	>	##### Deep learning 
 >	>	> - Fundamental model of deep learning is the CNN(Convolution Neural Network), RNN(Recurrent Neural Network.)
 
 ## 강의 
