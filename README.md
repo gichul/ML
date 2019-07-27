@@ -7,7 +7,7 @@
 1. expert system 
 2. reverse engineering
 3. machine learning 
-	#Machine learning 
+	# Machine learning 
 		- Machine learning form a rule by itself about specific problems in data by using the mathematical way like human thinking.
 		- Hidden Markov Model
 		- Artificial Neural Network
