@@ -8,7 +8,6 @@ from processing import *
 def img_show(img):
 	pil_img=Image.fromarray(np.uint8(img))
 	pil_img.show()
-'''
 (x_train, t_train), (x_test, t_test) = load_mnist(flatten=True,normalize=False)
 
 	
@@ -29,8 +28,6 @@ print(img.shape)
 img_show(img)
 
 '''
-
-'''
 x,y=get_data()
 print(x[0])
 #print(np.sum(np.array(x[0])))
@@ -42,5 +39,4 @@ img_show(img)
 label=y[0]
 print(label)
 '''
-
 accuracy()
