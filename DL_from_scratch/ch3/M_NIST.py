@@ -17,9 +17,14 @@ def img_show(img):
 #print(t_test.shape)
 
 img =x_test[0]
-print(x_test[0])
+for i in range(784):
+    if i%28==0:
+        print()
+    print("%3d"%(x_test[0][i]),end='')
+print()
+    
 label=t_test[0]
-print(label)
+print("label : ",label)
 
 print(img.shape)
 img=img.reshape(28,28)
